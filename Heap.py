@@ -60,6 +60,7 @@ class Heap:
         for i in range((n // 2) - 1, -1, -1):
             self.heap(i)     # heap function
 
+    
     def extract_max(self):
         if len(self.heap) == 0:
             return None
