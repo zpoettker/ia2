@@ -1,6 +1,7 @@
 
 class Heap:
-    
+
+    # Constructor
     def __init__(self, arr=None):
         if arr is None:
             self.heap = []
@@ -8,6 +9,7 @@ class Heap:
             self.heap = arr[:]
             self.build_heap()
 
+    # Destructor
     def __del__(self):
         del self.heap  
 
