@@ -51,12 +51,12 @@ class Heap:
 
         if largest != i:
             self.heap[i], self.heap[largest] = self.heap[largest], self.heap[i]
-            self.heapify(largest)
+            self.heap(largest)
 
     def build_heap(self):
         n = len(self.heap)
         for i in range((n // 2) - 1, -1, -1):
-            self.heapify(i)
+            self.heap(i)
 
     def extract_max(self):
         if len(self.heap) == 0:
@@ -66,7 +66,7 @@ class Heap:
             return self.heap.pop()
         root = self.heap[0]
         self.heap[0] = self.heap.pop()
-        self.heapify(0)
+        self.heap(0)
         
         return root
 
