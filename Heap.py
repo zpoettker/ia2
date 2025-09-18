@@ -1,7 +1,3 @@
-# Heap.py
-# Homework – Heap Implementation
-# Functions: find_left, find_right, find_parent, get_value, heapify, build_heap
-
 class Heap:
     def __init__(self, arr=None):
        #Constructor
